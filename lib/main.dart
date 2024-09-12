@@ -65,6 +65,12 @@ class _MyHomePageState extends State<MyHomePage> {
             color: const Color.fromARGB(255, 240, 185, 181),
             child: const Center(child: Text("Позязя")),
           ),
+          Container(
+            width: 150,
+            height: 150,
+            color: const Color.fromARGB(255, 220, 201, 226),
+            child: const Center(child: Text("Стас луший стасоста")),
+          ),
         ],
       )),
     );
