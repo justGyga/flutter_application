@@ -38,14 +38,34 @@ class _MyHomePageState extends State<MyHomePage> {
         // title: Text(widget.title),
       ),
       body: Center(
-          child: Container(
-        width: 150,
-        height: 150,
-        color: Colors.orange,
-        child: const Padding(
-          padding: EdgeInsets.all(15),
-          child: Text("Mobile App Development"),
-        ),
+          child: Wrap(
+        spacing: 15,
+        children: [
+          Container(
+            width: 150,
+            height: 150,
+            color: Colors.red,
+            child: const Center(child: Text("Жвакин Егор Андреевич")),
+          ),
+          Container(
+            width: 150,
+            height: 150,
+            color: const Color.fromARGB(255, 230, 92, 82),
+            child: const Center(child: Text("421-2")),
+          ),
+          Container(
+            width: 150,
+            height: 150,
+            color: const Color.fromARGB(255, 233, 137, 131),
+            child: const Center(child: Text("Вернит 421-4")),
+          ),
+          Container(
+            width: 150,
+            height: 150,
+            color: const Color.fromARGB(255, 240, 185, 181),
+            child: const Center(child: Text("Позязя")),
+          ),
+        ],
       )),
     );
   }
