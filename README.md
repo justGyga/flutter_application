@@ -1,16 +1,10 @@
-# flutter_application
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Лабораторная #3
+## Виджет Form;
+Позволяет скомпоновать несколько обхектов ввода, таких как поля ввода текста. Позволяет объединить в себе поля ввода. Обращаясь к состоянию формы FormState, можно проверить корректное заполнение полей, сбросить значения по умолчанию и сохранить значения.
+## Виджет TextFormFiled;
+Используется для ввода текста
+## Виджет RadioListTile;
+## Валидация;
+## Ключи формы и полей;
+## Виджет ChekBoxListTile;
+## Класс Navigator;
