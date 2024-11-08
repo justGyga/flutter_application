@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application/cubit/page_cubit.dart';
+import 'package:flutter_application/cubit/page/page_cubit.dart';
+import 'package:flutter_application/history.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class Screen extends StatelessWidget {
@@ -10,6 +11,12 @@ class Screen extends StatelessWidget {
     return BlocProvider(
       create: (_) => ScreenCubit(),
       child: Scaffold(
+        appBar: AppBar(
+          leading: IconButton(
+              onPressed: () => Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const HistoryPage())),
+              icon: const Icon(Icons.history)),
+        ),
         body: Padding(
           padding: const EdgeInsets.all(16.0),
           child: BlocBuilder<ScreenCubit, ScreenState>(
@@ -20,7 +27,7 @@ class Screen extends StatelessWidget {
                 return Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('Результат: ${state.result}'),
+                    Text('Результат: ${state.result} м/с'),
                     const SizedBox(height: 16),
                     ElevatedButton(
                       onPressed: () {
